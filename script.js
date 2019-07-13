@@ -84,7 +84,8 @@ const images = [
     "imgs/foto83.jpg",
   ];
   
-  let i = 0;
+
+  let i = 47;
   
   function placeImage(x, y) {
     const nextSrc = images[i];
@@ -101,11 +102,30 @@ const images = [
     
     document.body.appendChild(img);
     
-    i = i + 1;
+
+    let size = images.length;
+    i = Math.floor(size * Math.random());
+  }
+
+
+  /*
+
+
+    var size = images.length;
+    var x = Math.floor(size * Math.random());
+
+
+
+
+      i = i + 1;
     if (i >= images.length) {
       i = 0;
     }
-  }
+  */
+
+
+
+  
   
   document.addEventListener("click", function (event) {
     event.preventDefault();

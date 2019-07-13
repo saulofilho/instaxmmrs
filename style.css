@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     background-color: whitesmoke;
     overflow: hidden;
-    cursor: url("https://cursorcss.s3-sa-east-1.amazonaws.com/cursorRedCam8x8-01.png"), auto;
+    cursor: url("https://cursorcss.s3-sa-east-1.amazonaws.com/cursorRedCam32px-01.png"), auto;
 }
 #logoCenter {
     position: fixed;
@@ -12,16 +12,8 @@ html, body {
     margin-top: -50px;
     margin-left: -100px;
     z-index: 99;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='36' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🔄</text></svg>") 16 0,auto;
 }
-/*
-h1 {
-    font-family: 'Suez One', serif;
-    background: -webkit-linear-gradient(135deg, #e66465, #9198e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-}
-*/
 @keyframes fadein {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -41,6 +33,7 @@ button {
     background-color: transparent;
     font-size: 24px;
     z-index: 99;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='30' height='36' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🔄</text></svg>") 16 0,auto;
 }
 @media screen and (max-width: 600px) {
     img {

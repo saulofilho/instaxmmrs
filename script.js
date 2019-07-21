@@ -1,3 +1,20 @@
+window.setInterval(function () {
+  let randomBgColor = '#' + ('000000' + Math.floor(Math.random() * 16777215).toString(16)).slice(-6);
+  
+  function myFunction(x) {
+    if (x.matches) { // If media query matches
+      document.body.style.backgroundColor = randomBgColor;
+    } else {
+     document.body.style.backgroundColor = "whitesmoke";
+    }
+  }
+
+  var x = window.matchMedia("(max-width: 800px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction)
+  
+}, 2000);
+
 const images = [
     "imgs/foto1.jpg",
     "imgs/foto2.jpg",
@@ -84,7 +101,6 @@ const images = [
     "imgs/foto83.jpg",
   ];
   
-
   let i = 47;
   
   function placeImage(x, y) {
@@ -102,31 +118,10 @@ const images = [
     
     document.body.appendChild(img);
     
-
     let size = images.length;
     i = Math.floor(size * Math.random());
   }
 
-
-  /*
-
-
-    var size = images.length;
-    var x = Math.floor(size * Math.random());
-
-
-
-
-      i = i + 1;
-    if (i >= images.length) {
-      i = 0;
-    }
-  */
-
-
-
-  
-  
   document.addEventListener("click", function (event) {
     event.preventDefault();
     placeImage(event.pageX, event.pageY);

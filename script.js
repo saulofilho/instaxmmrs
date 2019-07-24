@@ -1,19 +1,22 @@
+//BG GRADIENT COLOR 800px
+/*
 window.setInterval(function () {
   let randomBgColor = '#' + ('000000' + Math.floor(Math.random() * 16777215).toString(16)).slice(-6);
   
   function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches) { 
       document.body.style.backgroundColor = randomBgColor;
     } else {
      document.body.style.backgroundColor = "whitesmoke";
     }
   }
 
-  var x = window.matchMedia("(max-width: 800px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction)
+  var x = window.matchMedia("(max-width: 800px)");
+  myFunction(x);
+  x.addListener(myFunction);
   
 }, 2000);
+*/
 
 const images = [
     "imgs/foto1.jpg",
